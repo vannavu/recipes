@@ -79,7 +79,7 @@ h1 {
   margin: 0 0 var(--grid-gap) 0;
   background: var(--recipe-card-color);
   border: var(--solid-border);
-  padding: 1.5vw;
+  padding: 1.5vw 0;
   text-align: center;
 }
 
@@ -234,7 +234,7 @@ main p {
   }
   h1 {
     font-size: 16vw;
-    padding: var(--grid-gap);
+    padding: var(--grid-gap) 0;
   }
   .recipe, .recipe_description, .recipe_date, .recipe_counter, .ingredients_steps, .sources, .notes {
     display: block;
