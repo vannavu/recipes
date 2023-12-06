@@ -233,7 +233,7 @@ main p {
     line-height: 1.5;
   }
   h1 {
-    font-size: 17vw;
+    font-size: 16vw;
     padding: var(--grid-gap);
   }
   .recipe, .recipe_description, .recipe_date, .recipe_counter, .ingredients_steps, .sources, .notes {
