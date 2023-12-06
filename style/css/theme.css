@@ -121,8 +121,13 @@ main {
   font-family: Xanh Mono Italic, monospace;
 }
 
+.recipe_filter_category_container {
+  columns: 2;
+}
+
 .recipe_filter_category {
   margin-bottom: 1rem;
+  break-inside: avoid-column;
 }
 
 .recipe_filter_category:last-child {
@@ -153,6 +158,11 @@ h2 {
 }
 
 .recipe h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.recipe img + h2 {
   text-align: center;
   margin: 0.5rem 1rem 1rem 1rem;
 }
@@ -223,6 +233,16 @@ main p {
   line-height: 1.25;
 }
 
+.notes ul li:before{
+  content: "• ";
+}
+
+.notes ul li {
+  text-indent: -1.2rem;
+  margin-left: 1.2rem;
+}
+
+
 @media only screen and (max-width: 800px) {
   :root {
     --root_ptsize: 14px;
@@ -235,7 +255,7 @@ main p {
     font-size: 16vw;
     padding: var(--grid-gap) 0;
   }
-  .recipe, .recipe_description, .recipe_date, .recipe_counter, .ingredients_steps, .sources, .notes {
+  .recipe, .recipe_filters, .recipe_description, .recipe_date, .recipe_counter, .ingredients_steps, .sources, .notes {
     display: block;
   }
 }
