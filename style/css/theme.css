@@ -91,7 +91,7 @@ main {
   column-gap: var(--grid-gap);
 }
 
-.recipe, .recipe_description, .recipe_date, .recipe_counter, .ingredients_steps, .sources, .notes {
+.recipe, .recipe_filters, .recipe_description, .recipe_date, .recipe_counter, .ingredients_steps, .sources, .notes {
   display: inline-block;
   width: 100%;
   margin-bottom: var(--grid-gap);
@@ -99,7 +99,7 @@ main {
   background: var(--recipe-card-color);
 }
 
-.recipe_description, .recipe_date, .recipe_counter, .ingredients_steps, .sources, .notes {
+.recipe_filters, .recipe_description, .recipe_date, .recipe_counter, .ingredients_steps, .sources, .notes {
   padding: 1.5rem;
 }
 
@@ -121,6 +121,14 @@ main {
   font-family: Xanh Mono Italic, monospace;
 }
 
+.recipe_filter_category {
+  margin-bottom: 1rem;
+}
+
+.recipe_filter_category:last-child {
+  margin-bottom: 0;
+}
+
 .recipe img {
   width: 100%;
   height: auto;
@@ -130,22 +138,6 @@ main {
 
 .recipe_description p, .notes p {
   line-height: 1.5;
-}
-
-/* servings */
-.ingredients_steps h3 {
-  font-size: 1rem;
-  font-family: Source Code, monospace;
-  font-variation-settings: var(--SourceCodeBold);
-  margin-bottom: 0.75rem;
-}
-
-/* ingredient group title */
-.ingredients_group h3 {
-  font-size: 1rem;
-  font-family: Source Code, monospace;
-  font-variation-settings: var(--SourceCodeBold);
-  margin-bottom: 0.75rem;
 }
 
 .ingredients_group p {
@@ -169,13 +161,20 @@ h2 {
   font-family: Xanh Mono, monospace;
 }
 
+h3 {
+  font-size: 1rem;
+  font-family: Source Code, monospace;
+  font-variation-settings: var(--SourceCodeBold);
+  margin-bottom: 0.75rem;
+}
+
 .ingredients_group {
   border-top: var(--solid-border);
   padding-top: 1.25rem;
   margin-top: 1.25rem;
 }
 
-.ingredient {
+label {
   display: block;
   position: relative;
   padding-left: 2rem;
@@ -192,7 +191,7 @@ h2 {
 }
 
 /* hide the browser's default checkbox */
-.ingredient input {
+input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -211,7 +210,7 @@ h2 {
 }
 
 /* fill in checkbox */
-.ingredient input:checked ~ .checkmark {
+input:checked ~ .checkmark {
   background-color: var(--txt);
 }
 

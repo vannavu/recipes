@@ -4,14 +4,11 @@ $(document).ready(function(){
         var currentIndex = array.length,
         temporaryValue, randomIndex;
     
-        // While there remain elements to shuffle...
         while (0 !== currentIndex) {
     
-        // Pick a remaining element...
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex -= 1;
     
-        // And swap it with the current element.
         temporaryValue = array[currentIndex];
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temporaryValue;
@@ -19,8 +16,29 @@ $(document).ready(function(){
     
         return array;
     }
-    
+
     var recipes = shuffle($(".recipes_container>.recipe").get());
     $(".recipes_container").html(recipes);
+    
+
+    // recipe filter
+    $("input[type='checkbox']").change(function(){
+    
+        var list = "";
+    
+        $("input[type='checkbox']").each(function(){
+            if(this.checked){
+                list = list + '.' + $(this).attr('id');
+            }
+        });
+
+        if(list !==''){
+            $(".recipe").hide();
+            $(list).show();
+        }
+        else {
+            $(".recipe").show();
+        }
+    });
 
 });
