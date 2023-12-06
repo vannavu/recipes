@@ -11,7 +11,7 @@
 }
 
 @font-face {
-  font-family: Xanh Mono Regular;
+  font-family: Xanh Mono;
   src: url('../fonts/XanhMono-Regular.woff2');
 }
 
@@ -57,7 +57,7 @@ html {
 body {
   background: var(--bg);
   color: var(--txt);
-  font-family: Source Code Pro;
+  font-family: Source Code;
   font-variation-settings: var(--SourceCode);
   font-feature-settings: "liga", "kern";
   font-size: 1rem;
@@ -102,10 +102,6 @@ main {
   background: var(--recipe-card-color);
 }
 
-.full {
-  width: 100%;
-}
-
 .recipe_description, .recipe_date, .recipe_counter, .ingredients_steps, .sources, .notes {
   padding: 1.5rem;
 }
@@ -122,6 +118,10 @@ main {
   font-size: 1.5rem;
   padding: 1rem;
   margin-bottom: var(--grid-gap);
+}
+
+#home:hover {
+  font-family: Xanh Mono Italic, monospace;
 }
 
 .recipe img {
