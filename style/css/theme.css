@@ -74,7 +74,7 @@ a {
 
 h1 {
   font-family: Xanh Mono, monospace;
-  font-size: 7.5vw;
+  font-size: 5.75vw;
   line-height: 1;
   margin: 0 0 var(--grid-gap) 0;
   background: var(--recipe-card-color);
@@ -126,11 +126,6 @@ main {
   height: auto;
   margin: 0;
   border-bottom: var(--solid-border);
-}
-
-.recipe p, .ingredients_steps p, .sources p {
-  font-family: Source Code Italic, monospace;
-  font-variation-settings: 'wght' 400;
 }
 
 .recipe_description p, .notes p {
@@ -238,7 +233,8 @@ main p {
     line-height: 1.5;
   }
   h1 {
-    font-size: 22.5vw;
+    font-size: 17vw;
+    padding: var(--grid-gap);
   }
   .recipe, .recipe_description, .recipe_date, .recipe_counter, .ingredients_steps, .sources, .notes {
     display: block;
