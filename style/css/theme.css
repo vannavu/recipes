@@ -25,9 +25,6 @@
   --bg: #eee8de;
   --txt: black;
   --solid-border: 1px solid var(--txt);
-  --header_height: 51px;
-  --content_margin: calc(var(--header_height));
-  --h1_basesize: 3.5rem;
   --SourceCode: 'wght' 380;
   --SourceCodeBold: 'wght' 600;
   --SourceCodeItalic: 'wght' 380;
@@ -140,6 +137,15 @@ main {
   line-height: 1.5;
 }
 
+/* servings */
+.ingredients_steps h3 {
+  font-size: 1rem;
+  font-family: Source Code, monospace;
+  font-variation-settings: var(--SourceCodeBold);
+  margin-bottom: 0.75rem;
+}
+
+/* ingredient group title */
 .ingredients_group h3 {
   font-size: 1rem;
   font-family: Source Code, monospace;
@@ -149,9 +155,10 @@ main {
 
 .ingredients_group p {
   margin-top: 0.75rem;
+  line-height: 1.4;
 }
 
-h2 /* recipe title */ {
+h2 {
   font-family: Xanh Mono Italic, monospace;
   font-size: 1.5rem;
   line-height: 1.4;
@@ -161,6 +168,10 @@ h2 /* recipe title */ {
 .recipe h2 {
   text-align: center;
   margin: 0.5rem 1rem 1rem 1rem;
+}
+
+.recipe a:hover h2 {
+  font-family: Xanh Mono, monospace;
 }
 
 .ingredients_group {
@@ -221,7 +232,6 @@ main p {
 @media only screen and (max-width: 800px) {
   :root {
     --root_ptsize: 14px;
-    --header_height: 36px;
     --grid-columns: 1;
   }
   body {
