@@ -224,6 +224,11 @@ input:checked ~ .checkmark {
   background-color: var(--txt);
 }
 
+.sources a {
+  display: block;
+  line-height: 1.75;
+}
+
 .sources a::before {
   content: "↗ ";
 }

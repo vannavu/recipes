@@ -22,11 +22,11 @@ $(document).ready(function(){
     
 
     // recipe filter
-    $("input[type='checkbox']").change(function(){
+    $(".recipe_filter_category input[type='checkbox']").change(function(){
     
         var list = "";
     
-        $("input[type='checkbox']").each(function(){
+        $(".recipe_filter_category input[type='checkbox']").each(function(){
             if(this.checked){
                 list = list + '.' + $(this).attr('id');
             }
@@ -39,6 +39,7 @@ $(document).ready(function(){
         else {
             $(".recipe").show();
         }
+
     });
 
 });
