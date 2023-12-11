@@ -171,6 +171,10 @@ h2 {
   font-family: Xanh Mono, monospace;
 }
 
+.recipe_description p {
+  text-align: center;
+}
+
 h3 {
   font-size: 1rem;
   font-family: Source Code, monospace;
