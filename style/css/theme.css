@@ -200,6 +200,10 @@ label {
   margin-bottom: 0.5rem;
 }
 
+.ingredients_group p a {
+  border-bottom: 1px dotted black;
+}
+
 .ingredient a::after {
   content: " ( ↗ recipe )";
 }
