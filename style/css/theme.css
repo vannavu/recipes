@@ -25,6 +25,7 @@
   --bg: #eee8de;
   --txt: black;
   --solid-border: 1px solid var(--txt);
+  --dotted-border: 1px dotted var(--txt);
   --SourceCode: 'wght' 380;
   --SourceCodeBold: 'wght' 600;
   --SourceCodeItalic: 'wght' 380;
@@ -201,7 +202,7 @@ label {
 }
 
 .ingredients_group p a {
-  border-bottom: 1px dotted black;
+  border-bottom: var(--dotted-border);
 }
 
 .ingredient a::after {
