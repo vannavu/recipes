@@ -242,6 +242,10 @@ input:checked ~ .checkmark {
   content: "↗ ";
 }
 
+.sources p::before {
+  content: "• ";
+}
+
 main p {
   width: 100%;
   line-height: 1.25;
