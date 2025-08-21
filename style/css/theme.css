@@ -205,6 +205,10 @@ label {
   border-bottom: var(--dotted-border);
 }
 
+.ingredients_group p br {
+  line-height: 1.6;
+}
+
 .ingredient a::after {
   content: " ( ↗ recipe )";
 }
@@ -233,6 +237,21 @@ input:checked ~ .checkmark {
   background-color: var(--txt);
 }
 
+
+.sources a, .sources p {
+  padding: 0.5em 0 0.5em 1.2em;
+  text-indent: -1.2em;
+  border-bottom: var(--dotted-border);
+}
+
+.sources :nth-child(2) {
+  padding: 0 0 0.5em 1.2em;
+}
+
+.sources :last-child {
+  border-bottom: none;
+}
+
 .sources a {
   display: block;
   line-height: 1.75;
@@ -242,8 +261,17 @@ input:checked ~ .checkmark {
   content: "↗ ";
 }
 
+.sources p {
+  line-height: 1.5;
+}
+
 .sources p::before {
   content: "• ";
+}
+
+.sources .book_title {
+  font-family: Source Code Italic;
+  font-variation-settings: 'wght' 400;
 }
 
 main p {
